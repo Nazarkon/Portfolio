@@ -21,6 +21,7 @@ body,h1,h2,h3,h4,p{
 header{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .header-info{
     flex:1;
@@ -92,6 +93,7 @@ header{
 .gallery-wrapper{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin-top: 80px;
 }
 .container-card{
@@ -132,4 +134,60 @@ header{
 }
 .container-card-description{
     line-height: 25px;
+}
+
+@media screen and (max-width: 992px) {
+    main{
+        margin: 30px 30px;
+    }
+    .content-wrapper{
+        margin: 100px 20px 100px 20px;
+    }
+    .header-info-title, .header-info-description{
+        text-align: center;
+    }
+    .header-info-description,.header-rate{
+        margin-top:40px;
+    }
+    .header-rate-block{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        width: 100%;
+    }
+    .header-rate-block__stars{
+        margin:0px 0px 10px 0px;
+    }
+    .background-image-top{
+        background-image: url('./images/bg-pattern-top-mobile.svg');
+    }
+    .background-image-bottom{
+        height: 430px;
+        left: 0px;
+        bottom: 0px;
+        background-image: url('./images/bg-pattern-bottom-mobile.svg');
+    }
+    .header-rate-block:nth-child(2){
+        margin-left: 0px;
+    }
+    .header-rate-block:nth-child(3){
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 768px){
+    .background-image-top , .background-image-bottom{
+        display: none;
+    }
+}
+@media screen and (max-width: 540px){
+    .background-image-top , .background-image-bottom{
+        display: none;
+    }
+    .header-info-title{
+        font-size: 50px;
+    }
+    .header-info-description{
+        font-size: 15px;
+    }
 }
