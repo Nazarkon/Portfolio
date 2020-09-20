@@ -1,0 +1,28 @@
+body{
+    margin:0;
+    padding: 0;
+}
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    padding: 20px 30px 20px 30px;
+}
+.container-logo__text{
+    text-transform: uppercase;
+    color:black;
+    font-size: 30px;
+}
+.container-header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-nav-list{
+    display: flex;
+}
+.header-nav-list__item{
+    list-style-type: none;
+    margin-right: 20px;
+}
